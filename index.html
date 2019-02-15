@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Lucas W. Gomez Site</title>
+    <LINK rel="stylesheet" href="main.css" type="text/css" />
 </head>
 <body>
     <h1>Hello World</h1>
@@ -13,5 +14,31 @@
         <p>
             An "img" element is an inline element so i can put it inside the "p" tag. It is also a no content element <br 
         </p>
+
+    <form action="http://nrs-projects.humboldt.edu/~st10/s19cs328"
+        method="get">
+        <fieldset>
+            <legend>Info About YOU!</legend>
+
+            <label>
+                Last name:
+                <input type="text" name="lastname" />
+            </label>
+
+            <label for="food_choice"> A food you like: </label>
+
+            <input type="text" name="liked_food"
+                   id="food_choice" maxlength="10"
+                   size="12" />
+        </fieldset>
+
+        <fieldset>
+            <legend> Submit </legend>
+
+            <input type="submit" />
+        </fieldset>
+    </form>
+    <hr />
+        
 </body>
 </html>
