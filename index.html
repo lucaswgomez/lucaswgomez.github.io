@@ -23,15 +23,22 @@
             <legend>Info About YOU!</legend>
 
             <label>
-                Last name:
-                <input type="text" name="lastname" />
-            </label>
+                First Name:
+                <input type="text" name="fname" />
+            </label><br /><br />
 
-            <label for="food_choice"> A food you like: </label>
+            <label> HSU email:
 
-            <input type="text" name="liked_food"
-                   id="food_choice" maxlength="10"
-                   size="12" />
+                <input type="email" id="emailAddress" name="email" size="64" maxlength="64" required
+                        placeholder="user@humboldt.edu" pattern="+@humboldt.edu"
+                        title="Please provide Humboldt State email address" />
+            </label><br /><br />
+            <label> Are you representing an HSU Club or Organization? </label> <br />
+            <label for="yesgroup">
+                <input type="radio" id="yesgroup" name="group" value="no" />
+                Yes</label> <br />
+            <label for="nogroup">
+                <input type="radio" id="nogroup" name="group" value="no" />No</label>
         </fieldset>
 
         <fieldset>
