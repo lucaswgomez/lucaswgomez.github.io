@@ -70,17 +70,26 @@ label[for="lname_fld"]
     grid-row: 2;
     grid-column: 2/3;
 }
-label[for="email_fld"]
+label[for="username_fld"]
 {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1;
 }
-#email_fld
+#username_fld
 {
-    grid-row: 3;
-    grid-column: 2/4;
+    grid-row: 1;
+    grid-column: 2/3;
 }
-
+label[for="pass_fld"]
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+#pass_fld
+{
+    grid-row: 2;
+    grid-column: 2/3;
+}
 label[for="primhost_fld"]
 {
     grid-row: 4;
