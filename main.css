@@ -4,8 +4,148 @@ body
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     color: #242729;
+    margin: 1em;
 }
 /**** Header Elements ****/
+form
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+fieldset
+{
+    background-color: seashell;
+    padding-bottom: 0;
+}
+
+.fieldset-form {
+    display: grid;
+    grid-template-columns: 40% 20% 10% 20% 10%;
+    grid-auto-rows: minmax(2em, auto);
+}
+legend
+{
+    background-color: goldenrod;
+    border: 1px solid black;
+    padding: 0.2em;
+    margin-bottom: 0.2em;
+    border-radius: 4px;
+}
+input
+{
+    margin-bottom: 0.3em;
+}
+input[type="submit"]
+{
+    margin-bottom: 0;
+}
+label.heading
+{
+    text-align: right;
+    margin-right: 1em;
+}
+label.heading
+{
+    grid-row: 7;
+    grid-column: 1;
+}
+label[for="fname_fld"]
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+#fname_fld
+{
+    grid-row: 1;
+    grid-column: 2/3;
+}
+label[for="lname_fld"]
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+#lname_fld
+{
+    grid-row: 2;
+    grid-column: 2/3;
+}
+label[for="email_fld"]
+{
+    grid-row: 3;
+    grid-column: 1;
+}
+#email_fld
+{
+    grid-row: 3;
+    grid-column: 2/4;
+}
+
+label[for="primhost_fld"]
+{
+    grid-row: 4;
+    grid-column: 1;
+}
+#primhost_fld
+{
+    grid-row: 4;
+    grid-column: 2/5;
+}
+label[for="addhost_fld"]
+{
+    grid-row: 5;
+    grid-column: 1;
+}
+#addhost_fld
+{
+    grid-row: 5;
+    grid-column: 2/5;
+}
+label[for="location_fld"]
+{
+    grid-row: 6;
+    grid-column: 1;
+}
+#location_fld
+{
+    grid-row: 6;
+    grid-column: 2/5;
+}
+input[type="date"]
+{
+    grid-row: 7;
+    grid-column: 2;
+}
+input[type="time"]
+{
+    grid-row: 7;
+    grid-column: 4;
+}
+label[for="event_fld"]
+{
+    grid-row: 8;
+    grid-column: 1;
+}
+#event_fld
+{
+    grid-row: 8;
+    grid-column: 2/5;
+}
+label[for="img_fld"]
+{
+    grid-row: 9;
+    grid-column: 1;
+}
+#img_fld
+{
+    grid-row: 9;
+    grid-column: 2/5;
+}
+.sub_button
+{
+    grid-row: 10;
+    grid-column: 3;
+}
 h1, h2, h3, h4, h5, h6 
 {
     font-family: 'Nunito', sans-serif;

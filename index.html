@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+    by: Lucas .W Gomez
+    last modified: 5-9-2019
+
+    you can run this using the URL: https://lucaswgomez.github.io/
+
+-->
+
 <head>
     <title>Lucas W. Gomez Site</title>
     <link rel="stylesheet" href="main.css" type="text/css" />
@@ -7,40 +15,53 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <p>                 <!-- p is a block element-->
+    <p>
+        <!-- p is a block element-->
         <img src="./media/profile_version.png" title="Luke" /> <br />
         I'm hosted with GitHub Pages.
-    </p>  
+    </p>
     <h2> This is a subheading of the H1 element</h2>
     <hr />
-        <p>
-            An "img" element is an inline element so i can put it inside the "p" tag. It is also a no content element <br /> 
-        </p>
+    <p>
+        An "img" element is an inline element so i can put it inside the "p" tag. It is also a no content element <br />
+    </p>
 
-    <form action="http://nrs-projects.humboldt.edu/~st10/s19cs328"
-        method="get">
+    <form action="session.php"
+          method="POST">
         <fieldset>
             <legend>Info About YOU!</legend>
+            
+            <div class="fieldset-form">
+                <label class="heading" for="username_fld">HSU Username: </label>
+                <input type="text" name="username" id="username_fld" required="required" />
+                
+                <label class="heading" for="pass_fld">Password: </label>
+                <input type="password" name="password" id="pass_fld" required="required" />
 
-            <label>
-                Last name:
-                <input type="text" name="lastname" />
-            </label>
-
-            <label for="food_choice"> A food you like: </label>
-
-            <input type="text" name="liked_food"
-                   id="food_choice" maxlength="10"
-                   size="12" />
+            </div>
         </fieldset>
 
         <fieldset>
             <legend> Submit </legend>
-
-            <button class="button"><span>Submit </span></button>
+            <div class="sub-button">
+                <button class="button" id="login_butt" name="login" value="submit"><span>Login </span></button>
+            </div>
         </fieldset>
     </form>
     <hr />
-        
+    <h2> List of Food Services around HSU</h2>
+    <table>
+        <caption> Food Services </caption>
+        <tr>
+            <th scope="row"> OH SNAP </th>
+            <td> Student run food pantry </td>
+        </tr>
+        <tr>
+            <th scope="row"> CALFRESH </th>
+            <td> EBT Grocery allowence, through the state government </td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
